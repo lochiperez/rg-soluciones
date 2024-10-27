@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-main',
   standalone: true,
   imports: [],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+  templateUrl: './main-work.component.html',
+  styleUrl: './main-work.component.scss'
 })
-export class MainComponent {
+export class MainWorkComponent {
 
 }
