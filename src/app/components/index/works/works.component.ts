@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CardWorkComponent } from '../../shared/card-work/card-work.component';
 
 @Component({
   selector: 'app-works',
   standalone: true,
-  imports: [],
+  imports: [CardWorkComponent],
   templateUrl: './works.component.html',
   styleUrl: './works.component.scss'
 })
