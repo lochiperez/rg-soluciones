@@ -1,15 +1,53 @@
-<section class="flex padding-md gap-x-md">
-    <form class="flex flex-column gap-y-sm">
+<section class="flex padding-x-xxxxl@md padding-y-xl gap-x-xl">
+    <form class="flex flex-column gap-y-sm bg-darker padding-md width-50% position-relative">
         <h4>Get in touch</h4>
         <h5>We're here to help you succeed!</h5>
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <input type="text" name="name" id="name" placeholder="Email address" required>
-        <input type="text" name="name" id="name" placeholder="Phone number" required>
-        <input type="text" name="name" id="name" placeholder="Message">
-        <p>I allow this website to store my submission so they can respond to my inquiry.</p>
-        <app-button name=Submit></app-button>
+        <app-input type="text" name="name" id="name" placeholder="Name" [required]="true"></app-input>
+        <app-input type="email" name="mail" id="email" placeholder="Email address" [required]="true"></app-input>
+        <app-input type="tel" name="phone" inputMode="numeric" id="phone" placeholder="Phone number" [required]="true"></app-input>
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <div class="flex justify-center gap-sm">
+            <app-input type="checkbox" id="allow" [required]="true"></app-input>
+            <p>I allow this website to store my submission so they can respond to my inquiry.</p>
+        </div>
+
+        <app-button name=Submit [disabled]="true" class="width-100% height-lg cursor pointer"></app-button>
     </form>
-    <div>
+    <div class="flex flex-column gap-xs">
         <a href="mailto:lochi.perez@gmail.com">lochi.perez&#64;gmail.com</a>
+        <p>Location</p>
+        <app-link (linkExterno)="goToMap()" name="Córdoba, XAR"></app-link>
+        <p>Hours</p>
+        <ol class="flex flex-column gap-xs">
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Mon<span class="display@md">day</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Tue<span class="display@md">sday</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Wed<span class="display@md">nesday</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Thu<span class="display@md">rsday</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Fri<span class="display@md">day</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Sat<span class="display@md">urday</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+            <li class="flex gap-sm" style="justify-content: space-between;">
+                <div>Sun<span class="display@md">day</span></div>
+                <div>9:00am - 10:00pm</div>
+            </li>
+        </ol>
     </div>
 </section>

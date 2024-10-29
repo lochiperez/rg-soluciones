@@ -7,7 +7,7 @@ import { NotFoundComponent } from './components/shared/not-found/not-found.compo
 
 export const routes: Routes = [
     {
-        path:'index',
+        path:'home',
         component: MainComponent
     },
     {
@@ -24,7 +24,7 @@ export const routes: Routes = [
     },
     {
         path:'',
-        redirectTo:'index',
+        redirectTo:'home',
         pathMatch: 'full'
     },
     {
