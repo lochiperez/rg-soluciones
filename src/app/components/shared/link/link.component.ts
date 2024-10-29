@@ -12,6 +12,7 @@ export class LinkComponent {
   @Input() name:string = ''
   @Input() link:string = ''
   @Output() linkExterno = new EventEmitter<string>()
+  @Input() href:string = ''
 
   redirect(){
     this.linkExterno.emit()

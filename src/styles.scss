@@ -6,3 +6,8 @@ textarea{
     height: 100px;
     outline: none;
 }
+
+html{
+    scroll-behavior: smooth;
+    transition: all ease-in-out 1s;
+}
