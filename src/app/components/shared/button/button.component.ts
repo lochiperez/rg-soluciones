@@ -10,6 +10,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() name:string = ''
-  @Input() class:string = ''
+  @Input() clases:string = ''
   @Input() disabled:boolean = false
 }

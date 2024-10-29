@@ -1,6 +1,6 @@
 <section class="flex padding-x-xxxxl@md padding-x-md padding-y-xl gap-x-xl@md gap-md flex-wrap flex-nowrap@md">
-    <form class="flex flex-column gap-y-sm bg-darker padding-md width-50%@md position-relative">
-        <h4>Get in touch</h4>
+    <form class="flex flex-column gap-y-sm bg-black color-white padding-md width-50%@md position-relative">
+        <h4 class="color-white">Get in touch</h4>
         <h5>We're here to help you succeed!</h5>
         <app-input type="text" name="name" id="name" placeholder="Name" [required]="true"></app-input>
         <app-input type="email" name="mail" id="email" placeholder="Email address" [required]="true"></app-input>
@@ -12,7 +12,7 @@
             <p>I allow this website to store my submission so they can respond to my inquiry.</p>
         </div>
 
-        <app-button name=Submit [disabled]="true" class="width-100% height-lg cursor pointer"></app-button>
+        <app-button name=Submit [disabled]="false" clases="width-100% height-lg cursor-pointer button-form"></app-button>
     </form>
     <div class="flex flex-column gap-xs">
         <a href="mailto:lochi.perez@gmail.com">lochi.perez&#64;gmail.com</a>

@@ -7,7 +7,29 @@ textarea{
     outline: none;
 }
 
-html{
-    scroll-behavior: smooth;
-    transition: all ease-in-out 1s;
+.button-hero{
+    background: #037dc9;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+.button-about{
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+}
+
+.button-form{
+    background-color: #037dc9;
+    border: none;
+    color: white;
+}
+
+.button-contact-header{
+    background: transparent;
+    border: 1px solid #171718;
+    padding: 10px 20px;
+    color: #171718;
 }

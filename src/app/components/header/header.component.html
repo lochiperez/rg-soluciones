@@ -5,7 +5,7 @@
         <app-link name="About" href="about" (linkExterno)="scroll('about')"></app-link>|
         <app-link name="services" href="services" (linkExterno)="scroll('services')"></app-link>
     </nav>
-    <app-button name="Contact" class="display@md"></app-button>
+    <app-button name="Contact" clases="display@md button-contact-header"></app-button>
     <button (click)="menu()" class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger hide@md" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
         <i class="header__trigger-icon" aria-hidden="true"></i>
       </button>
@@ -16,7 +16,7 @@
             <li class="header__item"><app-link name="Home" (linkExterno)="scroll('hero')"></app-link></li>
             <li class="header__item"><app-link name="About" href="about" (linkExterno)="scroll('about')"></app-link></li>
             <li class="header__item"><app-link name="services" href="services" (linkExterno)="scroll('services')"></app-link></li>
-            <app-button name="Contact"></app-button>
+            <app-button name="Contact" clases="button-contact-header"></app-button>
           </ul>
         </div>
       </nav>
